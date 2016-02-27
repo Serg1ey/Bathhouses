@@ -1,0 +1,216 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; font:12px Arial, sans-serif; background:#fff; color:#000; }
+div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,legend,label,select,input,textarea {
+	padding:0;
+	margin:0;
+	outline:none;
+	list-style:none;
+}
+button                         { cursor: pointer; padding: 0 }
+select, input, textarea        { font-size:12px; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+img                            { vertical-align: top; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { font:12px Arial, sans-serif; color:#000; text-decoration:underline; }
+a:hover                        { text-decoration:none; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+.clearfix:after                { content: ""; display: block; clear: both; visibility: hidden;}
+.clearfix                      { display: inline-block; width: 100% }
+
+.box-sizing {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 980px;
+	margin: 0 auto;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FONTS----------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.wrapper{
+	max-width: 1920px;
+}
+.wrap-header{
+	overflow: hidden;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.header{
+	background: url("../images/header/fon-header.jpg") top center;
+	overflow: hidden;
+}
+.logo{
+	float: left;
+	margin: 4px 0 0 83px;
+}
+.left-block-header{
+	float: right;
+	overflow: hidden;
+}
+.btn-header{
+	border: solid 2px #fe9b00;
+	padding: 15px 20px 10px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	transition: .3s;
+	background: rgba(0,0,0,0);
+	margin: 15px 25px 15px 0;
+	float: left;
+}
+.btn-header:hover{
+	border-radius: 15px;
+}
+.mail-header{
+	float: right;
+	margin-right: 40px;
+}
+.mail-header a{
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	margin-top: 30px;
+	display: inline-block;
+	text-decoration: none;
+	vertical-align: middle;
+}
+.mail-header a:before{
+	content: '';
+	background: url("../images/header/icon-sms.png");
+	width: 36px;
+	height: 28px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+.nav-menu{
+	clear: both;
+	margin-left: 10px;
+}
+.nav-menu li{
+	display:inline-block;
+}
+.nav-menu li a{
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+
+}
+.nav-menu li a:before{
+	content: '';
+	border: solid 3px #fff;
+	border-radius: 20px;
+	display: inline-block;
+	background-color: #fff;
+	width: 1px;
+	height: 1px;
+	vertical-align: middle;
+	margin: 0 10px;
+}
+.nav-menu li:first-child a:before{
+	display: none;
+}
+.header h1{
+	font-size: 48px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	margin-top: 30px;
+}
+.search-description{
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	display: block;
+	text-align: center;
+	margin-top: 40px;
+}
+.btn-header-search{
+	background-color: #ef3e23;
+	border: none;
+	color: #fff;
+	padding: 0 25px;
+	font: bold 14px 'Open Sans', sans-serif;
+	transition: .3s;
+	height: 49px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.btn-header-search:hover{
+background-color: #cc2e16;
+}
+.search{
+	color: #a9adae;
+	font-size: 18px;
+	padding: 12px 20px 12px 60px;
+	width: 400px;
+	border-right: none;
+	display: inline-block;
+	vertical-align: middle;
+}
+.wrap-select-header{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+.wrap-select-header:before{
+	content: '';
+	background: url("../images/header/icon-dislocation.png");
+	display: inline-block;
+	width: 18px;
+	height: 24px;
+	position: absolute;
+	bottom: 11px;
+	left: 20px;
+}
+.site-search{
+	text-align: center;
+	margin: 70px 0 25px;
+}
+
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------OTHER----------------------------------------*/
+/*----------------------------------------------------------------------------------*/
