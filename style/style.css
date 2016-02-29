@@ -61,12 +61,17 @@ a:hover                        { text-decoration:none; }
 .wrap-header{
 	overflow: hidden;
 }
+.wrap-content{
+	position: relative;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .header{
 	background: url("../images/header/fon-header.jpg") top center;
 	overflow: hidden;
+	text-align: center;
+	border-bottom: solid 1px #fff;
 }
 .logo{
 	float: left;
@@ -74,6 +79,7 @@ a:hover                        { text-decoration:none; }
 }
 .left-block-header{
 	float: right;
+	margin-right: 40px;
 	overflow: hidden;
 }
 .btn-header{
@@ -92,7 +98,6 @@ a:hover                        { text-decoration:none; }
 }
 .mail-header{
 	float: right;
-	margin-right: 40px;
 }
 .mail-header a{
 	font-size: 18px;
@@ -115,7 +120,6 @@ a:hover                        { text-decoration:none; }
 }
 .nav-menu{
 	clear: both;
-	margin-left: 10px;
 }
 .nav-menu li{
 	display:inline-block;
@@ -144,16 +148,14 @@ a:hover                        { text-decoration:none; }
 	font-size: 48px;
 	font-weight: bold;
 	color: #fff;
-	text-align: center;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 .search-description{
 	font-size: 18px;
 	font-weight: bold;
 	color: #fff;
 	display: block;
-	text-align: center;
-	margin-top: 40px;
+	margin-top: 30px;
 }
 .btn-header-search{
 	background-color: #ef3e23;
@@ -174,6 +176,7 @@ background-color: #cc2e16;
 	font-size: 18px;
 	padding: 12px 20px 12px 60px;
 	width: 400px;
+	height: 49px;
 	border-right: none;
 	display: inline-block;
 	vertical-align: middle;
@@ -194,15 +197,40 @@ background-color: #cc2e16;
 	left: 20px;
 }
 .site-search{
-	text-align: center;
-	margin: 70px 0 25px;
+	margin: 50px 0 67px;
 }
-
-
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+#map{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+}
+.content {
+	position: relative;
+	z-index: 10;
+}
+.block-sauna-top li{
+	background-color: #fff;
+	border-top: solid 1px #d59345;
+	display: inline-block;
+}
+.block-sauna-top img{
+	float: left;
+	margin: 15px 15px;
+	border: solid 3px #f3e3cf;
+}
+.sauna-top-right-block{
+	overflow: hidden;
+}
+.title{
+	color: #d59345;
+	font-size: 14px;
+	font-weight: bold;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -214,3 +242,7 @@ background-color: #cc2e16;
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+#gmap_canvas img{
+	max-width:none!important;
+	background:none!important
+}

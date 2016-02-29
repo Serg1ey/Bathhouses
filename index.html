@@ -2,57 +2,107 @@
 <html>
 <head>
     <title>Index</title>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta name="viewport" content="width=1024, user-scalable=yes">
-    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
-    <link rel="stylesheet" type="text/css" href="style/style.css" />
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+    <link rel="stylesheet" type="text/css" href="style/style.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext' rel='stylesheet'
+          type='text/css'>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="header">
-            <div class="wrap-header">
+<div class="wrapper">
+    <div class="header">
+        <div class="wrap-header">
                 <span class="logo">
                     <img src="images/header/logo.png">
                 </span>
-                <div class="left-block-header">
-                    <button class="btn-header">ДОБАВИТЬ САУНУ</button>
+
+            <div class="left-block-header">
+                <button class="btn-header">ДОБАВИТЬ САУНУ</button>
                     <span class="mail-header">
                         <a href="mailto:zaparenkosergie@ukr.net">info@sauny.kiev.ua</a>
                     </span>
-                    <ul class="nav-menu">
-                        <li>
-                            <a href="#">ГЛАВНАЯ</a>
-                        </li>
-                        <li>
-                            <a href="#">РАСШИРЕННЫЙ ПОИСК</a>
-                        </li>
-                        <li>
-                            <a href="#">СОТРУДНИЧЕСТВО</a>
-                        </li>
-                        <li>
-                            <a href="#">ВХОД</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="#">ГЛАВНАЯ</a>
+                    </li>
+                    <li>
+                        <a href="#">РАСШИРЕННЫЙ ПОИСК</a>
+                    </li>
+                    <li>
+                        <a href="#">СОТРУДНИЧЕСТВО</a>
+                    </li>
+                    <li>
+                        <a href="#">ВХОД</a>
+                    </li>
+                </ul>
             </div>
-            <h1>САУНЫ И БАНИ КИЕВА</h1>
-            <h2 class="search-description">Каталог с сервисом поиска по параметрам и отзывам посетителей</h2>
-            <div class="site-search">
-                <span class="wrap-select-header">
+        </div>
+        <h1>САУНЫ И БАНИ КИЕВА</h1>
+
+        <h2 class="search-description">Каталог с сервисом поиска по параметрам и отзывам посетителей</h2>
+
+        <form class="site-search">
+            <span class="wrap-select-header">
                 <select class="search">
                     <option>Выбрать район города</option>
                     <option>Пока)</option>
-                </select></span><button class="btn-header-search">Начать поиск</button>
-
-            </div>
-        </div>
-        <div class="content"></div>
-        <div class="footer"></div>
+                </select>
+            </span><button class="btn-header-search">Начать поиск</button>
+        </form>
     </div>
+    <div class="wrap-content">
+        <div id="map">
+            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+            <div style='overflow:hidden;height:100%;width:100%;'>
+                <div id='gmap_canvas' style='height:100%;width:100%;'></div>
+                <div>
+                    <small><a href="http://embedgooglemaps.com">embedgooglemaps.com</a></small>
+                </div>
+                <div>
+                    <small>
+                        <a href="http://buyproxies.io/">buyproxies.io</a>
+                    </small>
+                </div>
+            </div>
+            <script type='text/javascript'>
+                function init_map() {
+                    var myOptions = {
+                        zoom: 10,
+                        center: new google.maps.LatLng(50.4501, 30.523400000000038),
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    };
+                    map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                    marker = new google.maps.Marker({map: map, position: new google.maps.LatLng(50.4501, 30.523400000000038)});
+                    infowindow = new google.maps.InfoWindow({content: '<strong>Название</strong><br>Kiev, Ukraine<br>'});
+                    google.maps.event.addListener(marker, 'click', function () {
+                        infowindow.open(map, marker);
+                    });
+                    infowindow.open(map, marker);
+                }
+                google.maps.event.addDomListener(window, 'load', init_map);
+            </script>
+        </div>
+        <div class="content">
+            <ul class="block-sauna-top">
+                <li>
+                    <img src="images/content/photo.jpg">
+                    <div class="sauna-top-right-block">
+                        <span class="title">САУНА ИМПЕРИАЛ</span>
+                    </div>
+                </li>
+                <li></li>
+                <li></li>
+            </ul>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/commonJs.js"></script>
+        </div>
+    </div>
+    <div class="footer"></div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/commonJs.js"></script>
 </body>
 </html>
