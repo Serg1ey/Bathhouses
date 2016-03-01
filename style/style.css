@@ -209,29 +209,116 @@ background-color: #cc2e16;
 	right: 0;
 	width: 100%;
 }
-.content {
+.top-content {
 	position: relative;
 	z-index: 10;
 }
-.block-sauna-top li{
+.block-sauna-top > li{
 	background-color: #fff;
 	border-top: solid 1px #d59345;
 	display: inline-block;
 }
-.block-sauna-top img{
+.block-sauna-top img,
+.block-sauna-top .main-img{
 	float: left;
 	margin: 15px 15px;
 	border: solid 3px #f3e3cf;
 }
+.block-sauna-top .main-img {
+	width: 150px;
+}
 .sauna-top-right-block{
 	overflow: hidden;
+	margin: 20px 10px;
 }
 .title{
 	color: #d59345;
 	font-size: 14px;
 	font-weight: bold;
+	display: block;
+	margin-bottom: 10px;
 }
-/*----------------------------------------------------------------------------------*/
+.rating-stars{
+	display: inline-block;
+}
+.rating-stars li{
+	display: inline-block;
+}
+.rating-stars li:last-child{
+	margin-right: 5px;
+}
+.evaluation{
+	font-size: 14px;
+	color: #c1bccf;
+	margin-right: 5px;
+}
+.recall{
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+}
+.time{
+	background: url("../images/content/icon-clock..png") no-repeat left;
+	padding-left: 35px;
+}
+.blue-text{
+	color: #009fda;
+	font-size: 14px;
+	font-weight: bold;
+}
+.blue-numeral{
+	color: #009fda;
+	font-size: 24px;
+	font-weight: bold;
+}
+.block-sauna-top > li .sauna-top-right-block > div{
+	margin-bottom: 10px;
+}
+.location{
+	background: url("../images/content/icon-location.png") no-repeat left;
+	padding-left: 35px;
+}
+.street-name{
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	display: block;
+}
+.area-name{
+	font-size: 14px;
+	color: #009fda;
+	font-weight: bold;
+	display: block;
+}
+.bath-services li{
+	display: inline-block;
+	border: solid 1px #f3e3cf;
+}
+.btn-block-sauna-top{
+	background: #d59345;
+	color: #fff;
+	width: 105px;
+	height: 25px;
+	border: none;
+	float: right;
+}
+.bottom-block-sauna-top span{
+	color: #d59345;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 5px 0 0 70px;
+	display: inline-block;
+	transition: .3s;
+}
+.btn-block-sauna-top:hover{
+	background-color: #a36010;
+}
+.bottom-block-sauna-top{
+	background-color: #f3e3cf;
+	overflow: hidden;
+
+}
+	/*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 
