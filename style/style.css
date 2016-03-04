@@ -63,6 +63,7 @@ a:hover                        { text-decoration:none; }
 }
 .wrap-content{
 	position: relative;
+	overflow: hidden;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
@@ -217,15 +218,14 @@ background-color: #cc2e16;
 	background-color: #fff;
 	border-top: solid 1px #d59345;
 	display: inline-block;
+	overflow: hidden;
+	width: 515px;
 }
 .block-sauna-top img,
 .block-sauna-top .main-img{
 	float: left;
 	margin: 15px 15px;
 	border: solid 3px #f3e3cf;
-}
-.block-sauna-top .main-img {
-	width: 150px;
 }
 .sauna-top-right-block{
 	overflow: hidden;
@@ -243,6 +243,20 @@ background-color: #cc2e16;
 }
 .rating-stars li{
 	display: inline-block;
+	text-indent: -9999px;
+	background: url("../images/content/icon-stars.png")63px;
+	width: 15px;
+	height: 14px;
+}
+.rating-stars .active{
+	background: url("../images/content/icon-stars.png");
+	width: 15px;
+	height: 14px;
+}
+.rating-stars .half-star{
+	background: url("../images/content/icon-stars.png")32px;
+	width: 15px;
+	height: 14px;
 }
 .rating-stars li:last-child{
 	margin-right: 5px;
@@ -293,6 +307,27 @@ background-color: #cc2e16;
 .bath-services li{
 	display: inline-block;
 	border: solid 1px #f3e3cf;
+	text-indent: -9999px;
+}
+.wi-fi{
+	background: url("../images/content/icon-wi-fi.png");
+	width: 31px;
+	height: 31px;
+}
+.bath{
+	background: url("../images/content/icon-bath.png");
+	width: 31px;
+	height: 31px;
+}
+.steam-room{
+	background: url("../images/content/icon-steam-room.png");
+	width: 31px;
+	height: 31px;
+}
+.pool{
+	background: url("../images/content/icon-pool.png");
+	width: 31px;
+	height: 31px;
 }
 .btn-block-sauna-top{
 	background: #d59345;
@@ -316,7 +351,45 @@ background-color: #cc2e16;
 .bottom-block-sauna-top{
 	background-color: #f3e3cf;
 	overflow: hidden;
-
+}
+.content{
+	float: left;
+	position: relative;
+	z-index: 20;
+	margin-top: 5px;
+}
+.block-content img{
+	float: left;
+	margin: 20px 10px;
+	border: solid 3px #f3e3cf;
+}
+.block-content > li{
+	overflow: hidden;
+	border-bottom: solid 1px #f3e3cf;
+	padding-left: 5px;
+	background: #fff;
+}
+.block-content > li .sauna-top-right-block > div {
+	margin-bottom: 10px;
+}
+.block-content > li:first-child{
+	border-top: solid 1px #d59345;
+}
+.pagination{
+	background-color: #fff;
+}
+.btn-add-sauna{
+	background-color: #ef3e23;
+	color: #fff;
+	font-size: 18px;
+	width: 195px;
+	height: 45px;
+	border: none;
+	transition: .3s;
+	margin: 15px 0 20px 65px;
+}
+.btn-add-sauna:hover{
+	background-color: #cc2e16;
 }
 	/*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
@@ -325,7 +398,18 @@ background-color: #cc2e16;
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+.nav-menu-footer li{
+	display: inline-block;
+}
+.nav-menu-footer li:before{
+	content: '';
+	background-color: #e78f08;
+	border: solid 1px #e78f08;
+	display: inline-block;
+	border-radius: 20px;
+	vertical-align: middle;
+	padding: 1px;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
