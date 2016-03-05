@@ -187,6 +187,10 @@ background-color: #ae1902;
 	border-right: none;
 	display: inline-block;
 	vertical-align: middle;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 .wrap-select-header{
 	position: relative;
@@ -225,7 +229,7 @@ background-color: #ae1902;
 	border-top: solid 1px #d59345;
 	display: inline-block;
 	overflow: hidden;
-	width: 515px;
+	width: 523px;
 }
 .block-sauna-top img,
 .block-sauna-top .main-img{
