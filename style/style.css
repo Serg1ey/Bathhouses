@@ -137,7 +137,7 @@ a:hover                        { text-decoration:none; }
 	text-decoration: none;
 
 }
-.nav-menu li a:before{
+.nav-menu li:before{
 	content: '';
 	border: solid 3px #fff;
 	border-radius: 20px;
@@ -148,7 +148,7 @@ a:hover                        { text-decoration:none; }
 	vertical-align: middle;
 	margin: 0 10px;
 }
-.nav-menu li:first-child a:before{
+.nav-menu li:first-child:before{
 	display: none;
 }
 .header h1{
