@@ -254,7 +254,7 @@ background-color: #ae1902;
 .rating-stars li{
 	display: inline-block;
 	text-indent: -9999px;
-	background: url("../images/content/icon-stars.png")63px;
+	background: url("../images/content/icon-stars.png") 63px;
 	width: 15px;
 	height: 14px;
 }
@@ -264,7 +264,7 @@ background-color: #ae1902;
 	height: 14px;
 }
 .rating-stars .half-star{
-	background: url("../images/content/icon-stars.png")32px;
+	background: url("../images/content/icon-stars.png") 32px;
 	width: 15px;
 	height: 14px;
 }
@@ -400,6 +400,10 @@ background-color: #ae1902;
 }
 .btn-add-sauna:hover{
 	background-color: #ae1902;
+}
+.content-internal{
+	width: 1070px;
+	margin: 0 auto;
 }
 
 	/*----------------------------------------------------------------------------------*/
