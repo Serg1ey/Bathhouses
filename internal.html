@@ -26,72 +26,107 @@
                 </li>
             </ul>
         </div>
-        <div class="content-internal">
-            <ul class="description-melon">
-                <li>
-                    <div class="background-block">
-                        <span class="sauna">Сауна</span>
-                        <span class="name">ПОСЕЙДОН</span>
+
+        <div class="wrap-content">
+            <div id="map">
+                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                <div style='overflow:hidden;height:100%;width:100%;'>
+                    <div id='gmap_canvas' style='height:100%;width:100%;'></div>
+                    <div>
+                        <small><a href="http://embedgooglemaps.com">embedgooglemaps.com</a></small>
                     </div>
+                    <div>
+                        <small>
+                            <a href="http://buyproxies.io/">buyproxies.io</a>
+                        </small>
+                    </div>
+                </div>
+                <script type='text/javascript'>
+                    function init_map() {
+                        var myOptions = {
+                            zoom: 10,
+                            center: new google.maps.LatLng(50.4501, 30.523400000000038),
+                            mapTypeId: google.maps.MapTypeId.ROADMAP
+                        };
+                        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                        marker = new google.maps.Marker({map: map, position: new google.maps.LatLng(50.4501, 30.523400000000038)});
+                        infowindow = new google.maps.InfoWindow({content: '<strong>Название</strong><br>Kiev, Ukraine<br>'});
+                        google.maps.event.addListener(marker, 'click', function () {
+                            infowindow.open(map, marker);
+                        });
+                        infowindow.open(map, marker);
+                    }
+                    google.maps.event.addDomListener(window, 'load', init_map);
+                </script>
+            </div>
+            <div class="content-internal">
+                <ul class="description-melon">
+                    <li>
+                        <div class="background-block">
+                            <span class="sauna">Сауна</span>
+                            <span class="name">ПОСЕЙДОН</span>
+                        </div>
 
-                    <ul class="list-feature">
-                        <li>
-                            <span class="name-feature">Рейтинг:</span>
-                            <ul class="list-star wrap-right-block">
-                                <li class="active">star</li>
-                                <li class="active">star</li>
-                                <li class="active">star</li>
-                                <li class="active">star</li>
-                                <li>star</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <span class="name-feature">Стоимость:</span>
+                        <ul class="list-feature">
+                            <li>
+                                <span class="name-feature">Рейтинг:</span>
+                                <ul class="list-star wrap-right-block">
+                                    <li class="active">star</li>
+                                    <li class="active">star</li>
+                                    <li class="active">star</li>
+                                    <li class="active">star</li>
+                                    <li>star</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="name-feature">Стоимость:</span>
 
-                            <div class="wrap-right-block">
-                                <span class="wrap-icon-feature price">Price</span>
+                                <div class="wrap-right-block">
+                                    <span class="wrap-icon-feature price">Price</span>
 
-                                <span class="text">от <span class="num">150</span> грн/час</span>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="name-feature">Вместимость:</span>
-
-                            <div class="wrap-right-block">
-                                <span class="wrap-icon-feature man">Count</span>
-
-                                <span class="text">до <span class="num">12</span> человек</span>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="name-feature">Тип парной:</span>
-
-                            <div class="wrap-right-block">
-                                <span class="wrap-icon-feature type">Type bath</span>
-
-                                <div class="text">
-                                    <a href="#">Финская</a>,
-                                    <a href="#">Финская</a>
+                                    <span class="text">от <span class="num">150</span> грн/час</span>
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="name-feature">Район города:</span>
+                            </li>
+                            <li>
+                                <span class="name-feature">Вместимость:</span>
 
-                            <div class="wrap-right-block">
-                                <span class="wrap-icon-feature district">district</span>
+                                <div class="wrap-right-block">
+                                    <span class="wrap-icon-feature man">Count</span>
 
-                                <div class="text">
-                                    <a href="#">Юго-Запад</a>
+                                    <span class="text">до <span class="num">12</span> человек</span>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li></li>
-                <li></li>
-            </ul>
+                            </li>
+                            <li>
+                                <span class="name-feature">Тип парной:</span>
+
+                                <div class="wrap-right-block">
+                                    <span class="wrap-icon-feature type">Type bath</span>
+
+                                    <div class="text">
+                                        <a href="#">Финская</a>,
+                                        <a href="#">Финская</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="name-feature">Район города:</span>
+
+                                <div class="wrap-right-block">
+                                    <span class="wrap-icon-feature district">district</span>
+
+                                    <div class="text">
+                                        <a href="#">Юго-Запад</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="photo-bath"></li>
+                    <li></li>
+                </ul>
+            </div>
         </div>
+
         <div class="footer"></div>
     </div>
 

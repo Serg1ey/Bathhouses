@@ -403,8 +403,22 @@ a.btn-add-sauna{
 	background-color: #ae1902;
 }
 .content-internal{
-	width: 1070px;
-	margin: 0 auto;
+    position: relative;
+    z-index: 10;
+	max-width: 1070px;
+    width: 100%;
+	margin: 10px 0;
+    padding: 20px;
+    background: #fff;
+}
+.content-internal:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #d59345;
 }
 .background-block{
 	background: #a33d16;
@@ -415,6 +429,11 @@ a.btn-add-sauna{
 	display: inline-block;
     width: 100%;
     max-width: 340px;
+    vertical-align: top;
+}
+.description-melon .photo-bath {
+    width: 340px;
+    border: 5px solid #d59345;
 }
 .sauna{
 	color: #fff;
@@ -445,7 +464,8 @@ a.btn-add-sauna{
 .list-feature > li{
     overflow: hidden;
     display: table;
-	margin-bottom: 10px;
+    height: 32px;
+	margin-bottom: 3px;
 }
 .list-star{
 	display: inline-block;
