@@ -408,10 +408,13 @@ a.btn-add-sauna{
 }
 .background-block{
 	background: #a33d16;
-	padding: 10px 90px;
+	padding: 10px 0;
+    text-align: center;
 }
 .description-melon > li{
 	display: inline-block;
+    width: 100%;
+    max-width: 340px;
 }
 .sauna{
 	color: #fff;
@@ -424,16 +427,25 @@ a.btn-add-sauna{
 	font-weight: bold;
 }
 .name-feature{
+    display: table-cell;
+    width: 100px;
 	font-size: 12px;
 	color: #000;
+    vertical-align: middle;
+}
+.wrap-right-block {
+    display: table-cell;
+    vertical-align: middle;
 }
 .list-feature{
 	border: solid 1px #9d9d9d;
 	border-top: none;
 	padding: 15px 10px;
 }
-.list-feature li{
-	margin-bottom: 20px;
+.list-feature > li{
+    overflow: hidden;
+    display: table;
+	margin-bottom: 10px;
 }
 .list-star{
 	display: inline-block;
@@ -441,12 +453,44 @@ a.btn-add-sauna{
 .list-star li{
 	display: inline-block;
 	text-indent: -9999px;
-	background: url("../images/content/icon-stars2.png");
-	width: 39px;
+	background: url("../images/content/icon-stars2.png") -19px 0;
+	width: 18px;
 	height: 18px;
 }
-
-	/*----------------------------------------------------------------------------------*/
+.list-star li.active {
+    background-position: 0 0;
+}
+.wrap-icon-feature {
+    display: table-cell;
+    width: 50px;
+    height: 24px;
+    vertical-align: middle;
+    text-indent: -9999px;
+}
+.wrap-icon-feature.price {
+    background: url("../images/content/icon-clock..png") no-repeat left center;
+}
+.wrap-icon-feature.district {
+    background: url("../images/content/icon-location.png") no-repeat left center;
+}
+.wrap-icon-feature.man {
+    background: url("../images/content/icon-man.png") no-repeat left center;
+}
+.wrap-icon-feature.type {
+    background: url("../images/content/icon-type-bath.png") no-repeat left center;
+}
+.wrap-right-block .text {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.wrap-right-block .text .num {
+    font-size: 24px;
+}
+.wrap-right-block a {
+    color: #009fda;
+}
+/*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 
