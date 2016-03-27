@@ -405,6 +405,45 @@ background-color: #ae1902;
 	width: 1070px;
 	margin: 0 auto;
 }
+.background-block{
+	background: #a33d16;
+	padding: 10px 90px;
+}
+.description-melon > li{
+	display: inline-block;
+}
+.sauna{
+	color: #fff;
+	font-size: 18px;
+	margin-right: 5px;
+}
+.name{
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+}
+.name-feature{
+	font-size: 12px;
+	color: #000;
+}
+.list-feature{
+	border: solid 1px #9d9d9d;
+	border-top: none;
+	padding: 15px 10px;
+}
+.list-feature li{
+	margin-bottom: 20px;
+}
+.list-star{
+	display: inline-block;
+}
+.list-star li{
+	display: inline-block;
+	text-indent: -9999px;
+	background: url("../images/content/icon-stars2.png");
+	width: 39px;
+	height: 18px;
+}
 
 	/*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
