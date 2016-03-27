@@ -3,7 +3,7 @@
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
 body                            { padding:0; margin:0; font:12px Arial, sans-serif; background:#fff; color:#000; }
-div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,legend,label,select,input,textarea {
+div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,legend,label,select,input,textarea,button {
 	padding:0;
 	margin:0;
 	outline:none;
@@ -135,7 +135,6 @@ a:hover                        { text-decoration:none; }
 	color: #fff;
 	font-size: 14px;
 	text-decoration: none;
-
 }
 .nav-menu li:before{
 	content: '';
@@ -172,11 +171,11 @@ a:hover                        { text-decoration:none; }
 	font: bold 14px 'Open Sans', sans-serif;
 	transition: .3s;
 	height: 49px;
-	display: inline-block;
+	float: left;
 	vertical-align: middle;
 }
 .btn-header-search:hover{
-background-color: #ae1902;
+    background-color: #ae1902;
 }
 .search{
 	color: #a9adae;
@@ -184,17 +183,18 @@ background-color: #ae1902;
 	padding: 12px 20px 12px 60px;
 	width: 400px;
 	height: 49px;
-	border-right: none;
 	display: inline-block;
 	vertical-align: middle;
+    border: 1px solid #fff;
 
+    -webkit-border-radius: 0;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
 }
 .wrap-select-header{
 	position: relative;
-	display: inline-block;
+	float: left;
 	vertical-align: middle;
 }
 .wrap-select-header:before{
@@ -208,6 +208,7 @@ background-color: #ae1902;
 	left: 20px;
 }
 .site-search{
+    display: inline-block;
 	margin: 50px 0 67px;
 }
 /*----------------------------------------------------------------------------------*/
@@ -223,13 +224,17 @@ background-color: #ae1902;
 .top-content {
 	position: relative;
 	z-index: 10;
+    background: rgba(204, 237, 254, .6);
 }
 .block-sauna-top > li{
 	background-color: #fff;
 	border-top: solid 1px #d59345;
 	display: inline-block;
 	overflow: hidden;
-	width: 523px;
+	max-width: 523px;
+    width: 100%;
+    margin-bottom: 20px;
+    vertical-align: top;
 }
 .block-sauna-top img,
 .block-sauna-top .main-img{
@@ -318,26 +323,20 @@ background-color: #ae1902;
 	display: inline-block;
 	border: solid 1px #f3e3cf;
 	text-indent: -9999px;
+    width: 31px;
+    height: 31px;
 }
 .wi-fi{
 	background: url("../images/content/icon-wi-fi.png");
-	width: 31px;
-	height: 31px;
 }
 .bath{
 	background: url("../images/content/icon-bath.png");
-	width: 31px;
-	height: 31px;
 }
 .steam-room{
 	background: url("../images/content/icon-steam-room.png");
-	width: 31px;
-	height: 31px;
 }
 .pool{
 	background: url("../images/content/icon-pool.png");
-	width: 31px;
-	height: 31px;
 }
 .btn-block-sauna-top{
 	background: #d59345;
@@ -366,7 +365,6 @@ background-color: #ae1902;
 	float: left;
 	position: relative;
 	z-index: 20;
-	margin-top: 5px;
 }
 .block-content img{
 	float: left;
@@ -388,15 +386,18 @@ background-color: #ae1902;
 .pagination{
 	background-color: #fff;
 }
-.btn-add-sauna{
+a.btn-add-sauna{
+    display: block;
 	background-color: #ef3e23;
 	color: #fff;
 	font-size: 18px;
 	width: 195px;
-	height: 45px;
+	padding: 12px 0;
 	border: none;
 	transition: .3s;
 	margin: 15px 0 20px 65px;
+    text-align: center;
+    text-decoration: none;
 }
 .btn-add-sauna:hover{
 	background-color: #ae1902;
@@ -461,6 +462,10 @@ background-color: #ae1902;
 	color: #fff;
 	font-size: 14px;
 	text-decoration: none;
+}
+.nav-menu-footer a:hover,
+.nav-menu li a:hover {
+    text-decoration: underline;
 }
 .nav-menu-footer li{
 	display: inline-block;
